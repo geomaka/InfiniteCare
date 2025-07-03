@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Join Our Family | InfiniteCare Disability Community</title>
+    <meta name="description"
+        content="Become part of the InfiniteCare family. Fill out the form to join our inclusive community and access life-changing disability support services." />
+    <meta name="keywords"
+        content="join InfiniteCare, disability support sign up, inclusive programs Kenya, family empowerment form, PWD registration" />
+    <meta name="author" content="InfiniteCare Disability Centre and Innovation Hub" />
+
+    <!-- OG -->
+    <meta property="og:title" content="Join Our Family | InfiniteCare Disability Hub" />
+    <meta property="og:description"
+        content="Submit your interest to join InfiniteCare’s community support network for persons with disabilities and families." />
+    <meta property="og:image" content="https://yourdomain.com/images/og-join.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/Pages/join.html" />
+    <meta property="og:type" content="website" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-50 min-h-screen flex items-center justify-center px-4 py-12">
+
+    <!-- Include EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("3iC08-QX_wqdsvCXT"); // Replace with your EmailJS public key
+        })();
+    </script>
+
+    <!-- Join Form -->
+    <form id="joinForm" class="bg-white shadow-xl rounded-xl p-8 w-full max-w-lg">
+        <h2 class="text-2xl font-bold text-blue-700 mb-6 text-center">Join the InfiniteCare Family</h2>
+
+        <div class="mb-4">
+            <label for="name" class="block text-sm font-semibold mb-1">Name</label>
+            <input type="text" name="name" required class="w-full px-4 py-2 border rounded-lg">
+        </div>
+
+        <div class="mb-4">
+            <label for="email" class="block text-sm font-semibold mb-1">Email</label>
+            <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg">
+        </div>
+
+        <div class="mb-4">
+            <label for="message" class="block text-sm font-semibold mb-1">Message</label>
+            <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded-lg"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+            Submit
+        </button>
+
+        <p id="form-message" class="text-sm text-green-600 mt-4 hidden">Message sent!</p>
+    </form>
+
+    <!-- JS Submission Handler -->
+    <script>
+        document.getElementById('joinForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_4tfstsn', 'template_23ci9ap', this)
+                .then(() => {
+                    document.getElementById('form-message').classList.remove('hidden');
+                    setTimeout(() => { window.location.href = "index.html" }, 2000)
+                    this.reset();
+                }, (error) => {
+                    alert('Failed to send email: ' + JSON.stringify(error));
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us | InfiniteCare Disability Centre</title>
+    <meta name="description"
+        content="Get in touch with InfiniteCare for inquiries, therapy sessions, or program enrollment. Reach us via email, phone, or WhatsApp." />
+    <meta name="keywords"
+        content="contact InfiniteCare, disability support contact Kenya, therapy bookings, PWD services, Utawala Nairobi support" />
+    <meta name="author" content="InfiniteCare Disability Centre and Innovation Hub" />
+
+    <!-- OG -->
+    <meta property="og:title" content="Contact InfiniteCare | Inclusive Support Services Kenya" />
+    <meta property="og:description"
+        content="Reach out to InfiniteCare for expert support in disability education, therapy, and community programs." />
+    <meta property="og:image" content="https://yourdomain.com/images/og-contact.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/Pages/contact.html" />
+    <meta property="og:type" content="website" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("QX_wqdsvCXT");
+        })();
+    </script>
+</head>
+
+<body class="bg-blue-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <img src="images/cropped-WhatsApp-Image-2024-08-19-at-4.43.03-PM-65x59.jpeg" alt="InfiniteCare Logo"
+                    class="h-10 w-auto"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="text-xl font-bold text-blue-700 hidden">InfiniteCare</span>
+            </a>
+            <ul class="hidden md:flex space-x-8 font-medium text-sm md:text-base">
+                <li><a href="/" class="hover:text-blue-600">Home</a></li>
+                <li><a href="/Pages/about.html" class="hover:text-blue-600">About</a></li>
+                <li><a href="/Pages/services.html" class="hover:text-blue-600">Services</a></li>
+                <li><a href="/Pages/programs.html" class="hover:text-blue-600">Programs</a></li>
+                <li><a href="/Pages/contact.html" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden focus:outline-none text-blue-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden bg-white shadow-md transition-all duration-300">
+            <ul class="space-y-4 text-base font-medium text-blue-700 px-2">
+                <li><a href="/" class="block py-2">Home</a></li>
+                <li><a href="/Pages/about.html" class="block py-2">About</a></li>
+                <li><a href="/Pages/services.html" class="block py-2">Services</a></li>
+                <li><a href="/Pages/programs.html" class="block py-2">Programs</a></li>
+                <li><a href="/Pages/contact.html" class="block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="py-20 px-6 max-w-5xl mx-auto">
+        <h1 class="text-4xl font-bold text-blue-700 mb-6 text-center">Get In Touch</h1>
+        <p class="text-center mb-10">We’re here to help. Reach out through the form or the contact details below.</p>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Contact Details -->
+            <div>
+                <p class="mb-3"><strong>Email:</strong> info@disabilityinfinitecareconsultancy.co.ke</p>
+                <p class="mb-3"><strong>Phone:</strong> +254 748 122 449</p>
+                <p class="mb-6"><strong>Address:</strong> Utawala – Maisha Bora Crescent, Nairobi</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8075872753775!2d36.976871475881275!3d-1.2896993356317497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f6dce62ed5cd3%3A0x5fa89cd334fd6b24!2sMaishabora%20Cresent%20Utawala!5e0!3m2!1sen!2ske!4v1751500858850!5m2!1sen!2ske"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- EmailJS Form -->
+            <form id="contact-form" class="bg-white shadow-md p-6 rounded-lg">
+                <label class="block mb-2 text-sm font-semibold">Name</label>
+                <input type="text" name="name" required class="w-full mb-4 p-2 border rounded">
+
+                <label class="block mb-2 text-sm font-semibold">Email</label>
+                <input type="email" name="email" required class="w-full mb-4 p-2 border rounded">
+
+                <label class="block mb-2 text-sm font-semibold">Message</label>
+                <textarea name="message" rows="4" required class="w-full mb-4 p-2 border rounded"></textarea>
+
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Send
+                    Message</button>
+
+                <p id="form-response" class="mt-4 hidden text-green-600 font-medium">Message sent! Redirecting to
+                    homepage...</p>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8 text-center">
+        <p>&copy; 2025 InfiniteCare Disability Hub. All rights reserved.</p>
+    </footer>
+    <!-- EmailJS Form Submission Script -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_4tfstsn', 'template_tzjketz', this)
+                .then(() => {
+                    document.getElementById('form-response').classList.remove('hidden');
+                    this.reset();
+
+                    // Redirect after 2.5 seconds
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 2500);
+                }, (error) => {
+                    alert('Email failed to send. Please try again.');
+                    console.error(error);
+                });
+        });
+    </script>
+    <!-- Navbar toggle script -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

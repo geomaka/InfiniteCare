@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>InfiniteCare Disability Hub | Inclusive Therapy & Support in Kenya</title>
+  <meta name="description"
+    content="InfiniteCare is a leading disability support and innovation hub in Kenya, providing inclusive education, therapy, and community programs for persons with disabilities." />
+  <meta name="keywords"
+    content="disability support Kenya, inclusive education, therapy, rehabilitation, PWD services, InfiniteCare Nairobi, physiotherapy Kenya" />
+  <meta name="author" content="InfiniteCare Disability Centre and Innovation Hub" />
+
+  <!-- Open Graph (OG) Tags -->
+  <meta property="og:title" content="InfiniteCare | Empowering Persons with Disabilities in Kenya" />
+  <meta property="og:description"
+    content="Providing holistic support for persons with disabilities through inclusive education, therapy, early intervention, and community engagement." />
+  <meta property="og:image" content="https://yourdomain.com/images/og-home.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for footer icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-yH4H0kMndyU+Av3U4YnhyFy+GjNdoWp4mDGxkWX4DraKqWGRnDP7cxlJYoFDHcAvuI5IqK25kDg6faAip+U9dQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center space-x-2">
+        <img src="images/cropped-WhatsApp-Image-2024-08-19-at-4.43.03-PM-65x59.jpeg" alt="InfiniteCare Logo"
+          class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="text-xl font-bold text-blue-700 hidden">InfiniteCare</span>
+      </a>
+      <ul class="hidden md:flex space-x-8 font-medium text-sm md:text-base">
+        <li><a href="/" class="hover:text-blue-600">Home</a></li>
+        <li><a href="/Pages/about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="/Pages/services.html" class="hover:text-blue-600">Services</a></li>
+        <li><a href="/Pages/programs.html" class="hover:text-blue-600">Programs</a></li>
+        <li><a href="/Pages/contact.html" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-blue-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden bg-white shadow-md transition-all duration-300">
+      <ul class="space-y-4 text-base font-medium text-blue-700 px-2">
+        <li><a href="/" class="block py-2">Home</a></li>
+        <li><a href="/Pages/about.html" class="block py-2">About</a></li>
+        <li><a href="/Pages/services.html" class="block py-2">Services</a></li>
+        <li><a href="/Pages/programs.html" class="block py-2">Programs</a></li>
+        <li><a href="/Pages/contact.html" class="block py-2">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative h-screen bg-cover bg-center"
+    style="background-image: url('images/infinite-care-2.jpg');">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center text-white text-center h-full px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Tujane Tuelemeshane</h1>
+      <p class="text-base sm:text-lg md:text-xl mb-6 font-medium">Creating Solutions that are Accessible to All and
+        Better than Before, for Persons with Disability</p>
+      <a href="join.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg">Join Family</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-20 bg-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700 mb-6">About Us</h2>
+      <p class="text-gray-700 text-md md:text-lg leading-relaxed mb-6">
+        Infinitecare Disability Centre and Innovation Hub is a non-profit educational research and community service
+        Centre for persons with disabilities (PWDs). The Infinitecare Centre is a well-equipped one stop centre for
+        persons with disabilities offering a variety of services under highly qualified and experienced professionals.
+        The Infinitecare Centre hosts modern facilities for sensory integration, Physiotherapy and rehabilitation
+        managed by experienced specialists.
+      </p>
+      <a href="/Pages/about.html"
+        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-5 rounded-lg transition duration-300">Learn
+        More</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center text-blue-700 mb-12">Our Services</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+          <img src="images/infinite-care-2.jpg" alt="Service 1"
+            class="rounded-lg mb-4 w-full h-48 md:h-56 object-cover">
+          <h3 class="text-xl font-semibold text-blue-700 mb-2">Early Identification & Intervention</h3>
+          <p class="text-gray-600 text-sm">Working with Community Health Volunteers to ensure early assessment and
+            intervention for children born with disabilities.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+          <img src="images/WhatsApp-Image-2024-10-15-at-12.16.51-PM.jpeg" alt="Service 2"
+            class="rounded-lg mb-4 w-full h-48 md:h-56 object-cover">
+          <h3 class="text-xl font-semibold text-blue-700 mb-2">Rehabilitation & Habilitation</h3>
+          <p class="text-gray-600 text-sm">Providing therapy services for children and persons recovering from accidents
+            or acute conditions.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+          <img src="images/infinite-care-2.jpg" alt="Service 3"
+            class="rounded-lg mb-4 w-full h-48 md:h-56 object-cover">
+          <h3 class="text-xl font-semibold text-blue-700 mb-2">Mental Health Interventions</h3>
+          <p class="text-gray-600 text-sm">Supporting mothers and families facing anxiety, depression, and stress
+            related to caring for children with disabilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254748122449" target="_blank" aria-label="Chat on WhatsApp"
+    class="fixed bottom-6 right-6 group bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 animate-pulse z-50">
+    <img src="images/whatsapp-svgrepo-com.svg" alt="WhatsApp" class="w-6 h-6" aria-hidden="true">
+    <span
+      class="absolute bottom-full mb-2 hidden group-hover:block bg-black text-white text-xs px-2 py-1 rounded shadow-md">Chat
+      on WhatsApp</span>
+  </a>
+
+  <!-- Board Members -->
+  <section id="board" class="py-20 bg-blue-900 text-white text-center">
+    <h2 class="text-3xl font-bold mb-12">Meet Our Board of Members</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 px-4">
+      <!-- Member 1 -->
+      <div class="flex flex-col items-center">
+        <img src="images/WhatsApp-Image-2024-10-16-at-2.42.23-PM.jpeg" alt="Anne"
+          class="rounded-xl shadow-lg mb-4 w-32 h-32 object-cover">
+        <h3 class="text-lg font-semibold">Anne E. N. Musalia</h3>
+        <p class="text-xs text-blue-100 text-center px-2">Special and Inclusive Education Consultant, CEO InfiniteCare,
+          Chairperson</p>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="flex flex-col items-center">
+        <img src="images/WhatsApp-Image-2024-10-29-at-9.42.15-PM.jpeg" alt="Boniface"
+          class="rounded-xl shadow-lg mb-4 w-32 h-32 object-cover">
+        <h3 class="text-lg font-semibold">Boniface Mukwana</h3>
+        <p class="text-xs text-blue-100 text-center px-2">Landscaping Consultant, Director Partnerships</p>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="flex flex-col items-center">
+        <img src="images/WhatsApp-Image-2024-10-16-at-10.50.25-AM.jpeg" alt="Caroline"
+          class="rounded-xl shadow-lg mb-4 w-32 h-32 object-cover">
+        <h3 class="text-lg font-semibold">Caroline Kisaka</h3>
+        <p class="text-xs text-blue-100 text-center px-2">Counselling Psychologist, Family Programs</p>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="flex flex-col items-center">
+        <img src="images/WhatsApp-Image-2024-10-29-at-5.00.51-PM.jpeg" alt="Sonia"
+          class="rounded-xl shadow-lg mb-4 w-32 h-32 object-cover">
+        <h3 class="text-lg font-semibold">Bhavinder Kaur Rajbans</h3>
+        <p class="text-xs text-blue-100 text-center px-2">Public Image Consultant, Projects Director</p>
+      </div>
+
+      <!-- Member 5 -->
+      <div class="flex flex-col items-center col-span-full sm:col-auto">
+        <img src="images/WhatsApp-Image-2024-10-29-at-3.15.38-PM.jpeg" alt="Vicent"
+          class="rounded-xl shadow-lg mb-4 w-32 h-32 object-cover">
+        <h3 class="text-lg font-semibold">Vicent Oketch</h3>
+        <p class="text-xs text-blue-100 text-center px-2">PWD Teacher, Director Advocacy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-12">Our Success Stories</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+      <div class="bg-white p-6 rounded-xl shadow-md text-left">
+        <p class="text-gray-600 mb-4">"Infinitecare gave my child the personalized support they needed to thrive in
+          school..."</p>
+        <p class="font-bold text-blue-700">Mercy</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-left">
+        <p class="text-gray-600 mb-4">"Thanks to the early intervention services at Infinitecare, my child reached
+          milestones earlier..."</p>
+        <p class="font-bold text-blue-700">Mama Abel</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-left">
+        <p class="text-gray-600 mb-4">"I never thought my child would enjoy therapy until we came to InfiniteCare. It
+          was fun and helpful!"</p>
+        <p class="font-bold text-blue-700">Samantha Gilbert</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+        <p class="mb-2"><strong>Email:</strong> info@disabilityinfinitecareconsultancy.co.ke</p>
+        <p class="mb-2"><strong>Phone:</strong> +254 748 122 449</p>
+        <p class="mb-2"><strong>Location:</strong> Utawala - Maisha Bora Crescent</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="https://wa.me/254748122449" target="_blank" class="hover:text-green-400"><i
+              class="fab fa-whatsapp fa-lg"></i></a>
+          <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="hover:text-pink-300"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8075872753775!2d36.976871475881275!3d-1.2896993356317497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f6dce62ed5cd3%3A0x5fa89cd334fd6b24!2sMaishabora%20Cresent%20Utawala!5e0!3m2!1sen!2ske!4v1751500858850!5m2!1sen!2ske"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <p class="text-center mt-8 text-sm text-blue-100">&copy; 2025 InfiniteCare Disability Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- Navbar toggle script -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EARC & Physiotherapy Services | InfiniteCare</title>
+  <meta name="description" content="Explore EARC, physiotherapy, and pediatric care at InfiniteCare. Book appointments via WhatsApp.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <a href="../index.html" class="flex items-center space-x-2">
+        <img src="../images/cropped-WhatsApp-Image-2024-08-19-at-4.43.03-PM-65x59.jpeg" alt="InfiniteCare Logo"
+          class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <span class="text-xl font-bold text-blue-700 hidden">InfiniteCare</span>
+      </a>
+      <ul class="hidden md:flex space-x-6 font-medium text-sm md:text-base">
+        <li><a href="../index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="./about.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="./services.html" class="hover:text-blue-600">Services</a></li>
+        <li><a href="./programs.html" class="hover:text-blue-600">Programs</a></li>
+        <li><a href="./earc.html" class="hover:text-blue-600">Treatments</a></li>
+        <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-blue-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden bg-white shadow-md transition-all duration-300">
+      <ul class="space-y-4 text-base font-medium text-blue-700 px-2">
+        <li><a href="../index.html" class="block py-2">Home</a></li>
+        <li><a href="./about.html" class="block py-2">About</a></li>
+        <li><a href="./services.html" class="block py-2">Services</a></li>
+        <li><a href="./programs.html" class="block py-2">Programs</a></li>
+        <li><a href="./earc.html" class="block py-2">Treatments</a></li>
+        <li><a href="./contact.html" class="block py-2">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="pt-32 pb-12 px-6 max-w-5xl mx-auto text-center">
+    <h1 class="text-4xl font-bold text-blue-700 mb-4">EARC & Physiotherapy Services</h1>
+    <p class="text-gray-700 text-lg">Specialized evaluations, early interventions, and rehabilitation for individuals with disabilities — across all ages.</p>
+  </section>
+
+  <!-- EARC Overview -->
+  <section class="bg-blue-50 py-12 px-6">
+    <div class="max-w-5xl mx-auto space-y-6">
+      <h2 class="text-2xl font-bold text-blue-700">Modern Private Education Assessment and Resource Centre (EARC)</h2>
+      <p>InfiniteCare offers expert evaluations and tailored interventions for individuals with disabilities through a multidisciplinary approach. Services include:</p>
+      <ul class="list-disc pl-6 text-gray-700 space-y-2">
+        <li><strong>Functional Assessment</strong> – In-depth evaluations to identify strengths, challenges, and support strategies.</li>
+        <li><strong>Early Intervention & Rehabilitation</strong> – Timely support for children with developmental delays.</li>
+        <li><strong>Speech Therapy</strong> – Enhance communication and language skills.</li>
+        <li><strong>Physiotherapy</strong> – Improve mobility, posture, and coordination.</li>
+        <li><strong>Sensory Integration & CBT</strong> – Coping strategies for emotional and sensory regulation.</li>
+        <li><strong>School & Home Education Support</strong> – Personalized learning plans for special needs education.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Physiotherapy Services -->
+  <section class="py-12 px-6 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-6 items-center">
+      <img src="../images/physio-session.jpg" alt="Physiotherapy session"
+           class="rounded-lg shadow-md w-full h-64 object-cover">
+
+      <div>
+        <h2 class="text-3xl font-bold text-blue-700 mb-4">Physiotherapy Services</h2>
+        <p class="text-gray-700 mb-4">
+          We offer tailored treatments for restoring strength, reducing pain, and improving mobility. Each plan is created based on patient evaluation and goals.
+        </p>
+        <h3 class="text-xl font-semibold text-blue-600">Conditions We Treat</h3>
+        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700 text-sm">
+          <li>Lumbar Spondylosis & Post-Traumatic Injury</li>
+          <li>Osteoarthritis / Rheumatoid Arthritis</li>
+          <li>Bell’s / Facial Palsy, Stroke, Hemiparesis</li>
+          <li>Post-Surgical Recovery & Edema Management</li>
+          <li>Plantar Fasciitis & Neuromuscular Rehab</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pediatric Physiotherapy -->
+  <section class="bg-blue-50 py-12 px-6">
+    <div class="grid md:grid-cols-2 gap-6 items-center max-w-6xl mx-auto">
+      <img src="../images/child-therapy.jpg" alt="Pediatric therapy"
+           class="rounded-lg shadow-md w-full h-64 object-cover">
+
+      <div>
+        <h2 class="text-3xl font-bold text-blue-700 mb-4">Pediatric Physiotherapy</h2>
+        <p class="mb-4 text-gray-700">We specialize in developmental support for children with:</p>
+        <ul class="list-disc pl-5 space-y-1 text-gray-700 text-sm">
+          <li>Cerebral Palsy</li>
+          <li>Spina Bifida</li>
+          <li>Rickets & Muscle Weakness</li>
+          <li>Meningitis & Hydrocephalus</li>
+          <li>Down Syndrome & Other Neurological Conditions</li>
+        </ul>
+        <p class="mt-4 text-gray-700">Our goal is to enhance mobility, coordination, and independence through play-based and functional therapies tailored to each child's needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254748122449" target="_blank"
+    class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 flex items-center space-x-2 z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.82 11.82 0 0012 0C5.37 0 0 5.38 0 12a11.82 11.82 0 001.67 6.12L0 24l5.96-1.56A11.83 11.83 0 0012 24c6.63 0 12-5.38 12-12 0-3.19-1.25-6.21-3.48-8.52zM12 22.12a9.9 9.9 0 01-5.07-1.37l-.36-.22-3.54.93.95-3.45-.23-.36A9.91 9.91 0 012.06 12c0-5.46 4.46-9.9 9.94-9.9 2.65 0 5.14 1.03 7.02 2.9A9.89 9.89 0 0122.12 12c0 5.47-4.45 9.94-9.94 9.94z" />
+      <path d="M17.47 14.5l-2.36-.34a1 1 0 00-.87.27l-.63.64a6.82 6.82 0 01-3.61-3.61l.64-.63a1 1 0 00.27-.87l-.34-2.36a1 1 0 00-1-.87h-.52a2.09 2.09 0 00-2.1 2.1A8.94 8.94 0 0015.9 17a2.09 2.09 0 002.1-2.1v-.52a1 1 0 00-.53-.88z" />
+    </svg>
+    <span>Book Appointment</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+        <p class="mb-2"><strong>Email:</strong> info@disabilityinfinitecareconsultancy.co.ke</p>
+        <p class="mb-2"><strong>Phone:</strong> +254 748 122 449</p>
+        <p class="mb-2"><strong>Location:</strong> Utawala - Maisha Bora Crescent</p>
+      </div>
+      <div>
+        <iframe class="rounded-md w-full h-48" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8075872753775!2d36.976871475881275!3d-1.2896993356317497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f6dce62ed5cd3%3A0x5fa89cd334fd6b24!2sMaishabora%20Cresent%20Utawala!5e0!3m2!1sen!2ske!4v1751500858850!5m2!1sen!2ske">
+        </iframe>
+      </div>
+    </div>
+    <p class="text-center mt-8 text-sm text-blue-100">&copy; 2025 InfiniteCare Disability Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
